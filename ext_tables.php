@@ -11,7 +11,7 @@ $tempColumns = Array (
 	'tx_ddgooglesitemap_priority' => array(
 		'exclude' => 1,
 		'label' => 'LLL:EXT:dd_googlesitemap/locallang.xml:pages.tx_ddgooglesitemap_priority',
-		'displayCond' => 'FIELD:no_search:=:0',
+		'displayCond' => 'FIELD:tx_theme_exclude_from_google_index:=:0',
 		'config' => array(
 			'type' => 'select',
 			'renderType' => 'selectSingle',
@@ -33,7 +33,7 @@ $tempColumns = Array (
 	'tx_ddgooglesitemap_change_frequency' => array(
 		'exclude' => 1,
 		'label' => 'LLL:EXT:dd_googlesitemap/locallang.xml:pages.tx_ddgooglesitemap_change_frequency',
-		'displayCond' => 'FIELD:no_search:=:0',
+		'displayCond' => 'FIELD:tx_theme_exclude_from_google_index:=:0',
 		'config' => array(
 			'type' => 'select',
 			'renderType' => 'selectSingle',

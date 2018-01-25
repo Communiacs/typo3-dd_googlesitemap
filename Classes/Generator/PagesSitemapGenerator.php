@@ -90,7 +90,7 @@ class PagesSitemapGenerator extends AbstractSitemapGenerator {
 				'tx_ddgooglesitemap_priority' => $GLOBALS['TSFE']->page['tx_ddgooglesitemap_priority'],
 				'tx_ddgooglesitemap_change_frequency' => $GLOBALS['TSFE']->page['tx_ddgooglesitemap_change_frequency'],
 				'doktype' => $GLOBALS['TSFE']->page['doktype'],
-				'no_search' => $GLOBALS['TSFE']->page['no_search']
+				'no_search' => $GLOBALS['TSFE']->page['tx_theme_exclude_from_google_index']
 			);
 		}
 		else {
@@ -102,7 +102,7 @@ class PagesSitemapGenerator extends AbstractSitemapGenerator {
 				'tx_ddgooglesitemap_priority' => $page['tx_ddgooglesitemap_priority'],
 				'tx_ddgooglesitemap_change_frequency' => $GLOBALS['TSFE']->page['tx_ddgooglesitemap_change_frequency'],
 				'doktype' => $page['doktype'],
-				'no_search' => $page['no_search']
+				'no_search' => $page['tx_theme_exclude_from_google_index']
 			);
 		}
 
