@@ -90,7 +90,7 @@ class PagesSitemapGenerator extends AbstractSitemapGenerator {
 				'tx_ddgooglesitemap_priority' => $GLOBALS['TSFE']->page['tx_ddgooglesitemap_priority'],
 				'tx_ddgooglesitemap_change_frequency' => $GLOBALS['TSFE']->page['tx_ddgooglesitemap_change_frequency'],
 				'doktype' => $GLOBALS['TSFE']->page['doktype'],
-				'no_search' => $GLOBALS['TSFE']->page['tx_theme_exclude_from_google_index']
+				'tx_theme_exclude_from_google_index' => $GLOBALS['TSFE']->page['tx_theme_exclude_from_google_index']
 			);
 		}
 		else {
@@ -102,7 +102,7 @@ class PagesSitemapGenerator extends AbstractSitemapGenerator {
 				'tx_ddgooglesitemap_priority' => $page['tx_ddgooglesitemap_priority'],
 				'tx_ddgooglesitemap_change_frequency' => $GLOBALS['TSFE']->page['tx_ddgooglesitemap_change_frequency'],
 				'doktype' => $page['doktype'],
-				'no_search' => $page['tx_theme_exclude_from_google_index']
+				'tx_theme_exclude_from_google_index' => $page['tx_theme_exclude_from_google_index']
 			);
 		}
 
@@ -202,7 +202,7 @@ class PagesSitemapGenerator extends AbstractSitemapGenerator {
 	 * @return bool
 	 */
 	protected function shouldIncludePageInSitemap(array $pageInfo) {
-		return !$pageInfo['no_search'] && !in_array($pageInfo['doktype'], $this->excludedPageTypes);
+		return !$pageInfo['tx_theme_exclude_from_google_index'] && !in_array($pageInfo['doktype'], $this->excludedPageTypes);
 	}
 
 	/**
