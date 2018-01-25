@@ -1,5 +1,5 @@
 {
-    "name": "dmitryd/typo3-dd-googlesitemap",
+    "name": "communiacs/typo3-dd-googlesitemap",
     "type": "typo3-cms-extension",
     "description": "Google sitemaps for TYPO3",
     "homepage": "https://github.com/dmitryd/typo3-dd_googlesitemap",
